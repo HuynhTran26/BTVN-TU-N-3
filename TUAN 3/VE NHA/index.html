@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang cá nhân - Huỳnh Yến Trân</title>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+
+        /* Phần giới thiệu */
+        .profile {
+            background-color: white;
+            padding: 35px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #dce8f5;
+            margin-bottom: 15px;
+        }
+
+        .profile h1 {
+            color: #245b8f;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .profile p {
+            margin: 7px 0;
+            font-size: 16px;
+        }
+
+        .facebook {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #1877f2;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+        }
+
+        .facebook:hover {
+            background-color: #105fc5;
+        }
+
+        /* Phần danh sách bài tập */
+        .assignments {
+            background-color: white;
+            margin-top: 25px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        .assignments h2 {
+            text-align: center;
+            color: #245b8f;
+            margin-bottom: 25px;
+        }
+
+        .assignment-list {
+            list-style: none;
+        }
+
+        .assignment-list li {
+            border: 1px solid #e1e5eb;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            transition: 0.3s;
+        }
+
+        .assignment-list li:hover {
+            background-color: #eef5fc;
+            transform: translateX(5px);
+        }
+
+        .assignment-list a {
+            display: block;
+            padding: 13px 18px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .assignment-list i {
+            color: #2879bd;
+            margin-right: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 94%;
+            }
+
+            .profile, .assignments {
+                padding: 20px;
+            }
+
+            .profile h1 {
+                font-size: 23px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- THÔNG TIN CÁ NHÂN -->
+        <section class="profile">
+
+            <!-- THAY ẢNH ĐẠI DIỆN TẠI ĐÂY -->
+            <img src="images/avatar.jpg"
+                 alt="Ảnh đại diện Huỳnh Yến Trân"
+                 class="avatar">
+
+            <h1>HUỲNH YẾN TRÂN</h1>
+
+            <p>
+                <i class="fas fa-id-card"></i>
+                MSSV: 31241023609
+            </p>
+
+            <p>
+                <i class="fas fa-graduation-cap"></i>
+                Sinh viên - UEH
+            </p>
+
+            <a class="facebook"
+               href="https://www.facebook.com/yentran3032006"
+               target="_blank">
+                <i class="fab fa-facebook-f"></i>
+                Facebook cá nhân
+            </a>
+
+        </section>
+
+        <!-- DANH SÁCH BÀI TẬP -->
+        <section class="assignments">
+
+            <h2>
+                <i class="fas fa-book-open"></i>
+                DANH SÁCH BÀI TẬP
+            </h2>
+
+            <ul class="assignment-list">
+
+                <li>
+                    <a href="BAI2.html">
+                        <i class="fas fa-file-code"></i>
+                        Bài 2 - HTML
+                    </a>
+                </li>
+
+                <li>
+                    <a href="BAI4.html">
+                        <i class="fas fa-file-code"></i>
+                        Bài 4 - Định dạng danh sách
+                    </a>
+                </li>
+
+                <li>
+                    <a href="BAI5.html">
+                        <i class="fas fa-laptop-code"></i>
+                        Bài 5 - Landing Page
+                    </a>
+                </li>
+
+                <li>
+                    <a href="BAI6.html">
+                        <i class="fas fa-images"></i>
+                        Bài 6 - My Portfolio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="BAI7.html">
+                        <i class="fas fa-columns"></i>
+                        Bài 7 - Bố cục Layout
+                    </a>
+                </li>
+
+                <li>
+                    <a href="css1.html">
+                        <i class="fas fa-users"></i>
+                        Bài CSS1 - Heroes of JavaScript and HTML
+                    </a>
+                </li>
+
+                <li>
+                    <a href="BAI8_ICON.html">
+                        <i class="fas fa-icons"></i>
+                        Bài Font Awesome - Sử dụng Icon
+                    </a>
+                </li>
+
+            </ul>
+
+        </section>
+
+    </div>
+
+    <footer>
+        © 2026 - Huỳnh Yến Trân | Bài tập Phát triển ứng dụng Web
+    </footer>
+
+</body>
+</html>
