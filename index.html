@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang cá nhân - Huỳnh Yến Trân</title>
 
+    <!-- Font Awesome 5.15.4 -->
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -29,7 +30,7 @@
             margin: 40px auto;
         }
 
-        /* Phần giới thiệu */
+        /* THÔNG TIN CÁ NHÂN */
         .profile {
             background-color: white;
             padding: 35px;
@@ -38,22 +39,26 @@
             box-shadow: 0 3px 12px rgba(0,0,0,0.08);
         }
 
-       .avatar {
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto 15px;
-    border: 3px solid #4b8060;
-}
+        /* ẢNH ĐẠI DIỆN HÌNH TRÒN */
+        .avatar {
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #4b8060;
+        }
 
-.avatar img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    display: block;
-}
+        .avatar img {
+            width: 110px !important;
+            height: 110px !important;
+            max-width: none;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+            display: block;
+        }
+
         .profile h1 {
             color: #245b8f;
             font-size: 28px;
@@ -79,7 +84,7 @@
             background-color: #105fc5;
         }
 
-        /* Phần danh sách bài tập */
+        /* DANH SÁCH BÀI TẬP */
         .assignments {
             background-color: white;
             margin-top: 25px;
@@ -123,6 +128,7 @@
             margin-right: 10px;
         }
 
+        /* CHÂN TRANG */
         footer {
             text-align: center;
             padding: 20px;
@@ -130,12 +136,14 @@
             font-size: 14px;
         }
 
+        /* GIAO DIỆN ĐIỆN THOẠI */
         @media (max-width: 600px) {
             .container {
                 width: 94%;
             }
 
-            .profile, .assignments {
+            .profile,
+            .assignments {
                 padding: 20px;
             }
 
@@ -153,11 +161,10 @@
         <!-- THÔNG TIN CÁ NHÂN -->
         <section class="profile">
 
-            <!-- ẢNH ĐẠI DIỆN -->
-<div class="avatar">
-    <img src="TUAN%203/VE%20NHA/imgs/avatar.jpg"
-         alt="Ảnh đại diện Huỳnh Yến Trân">
-</div>
+            <div class="avatar">
+                <img src="TUAN%203/VE%20NHA/imgs/avatar.jpg"
+                     alt="Ảnh đại diện Huỳnh Yến Trân">
+            </div>
 
             <h1>HUỲNH YẾN TRÂN</h1>
 
@@ -173,7 +180,8 @@
 
             <a class="facebook"
                href="https://www.facebook.com/yentran3032006"
-               target="_blank">
+               target="_blank"
+               rel="noopener noreferrer">
                 <i class="fab fa-facebook-f"></i>
                 Facebook cá nhân
             </a>
@@ -191,49 +199,49 @@
             <ul class="assignment-list">
 
                 <li>
-                    <a href="BAI2.html">
+                    <a href="TUAN%203/VE%20NHA/BAI2.html">
                         <i class="fas fa-file-code"></i>
                         Bài 2 - HTML
                     </a>
                 </li>
 
                 <li>
-                    <a href="BAI4.html">
+                    <a href="TUAN%203/VE%20NHA/BAI4.html">
                         <i class="fas fa-file-code"></i>
                         Bài 4 - Định dạng danh sách
                     </a>
                 </li>
 
                 <li>
-                    <a href="BAI5.html">
+                    <a href="TUAN%203/VE%20NHA/BAI5.html">
                         <i class="fas fa-laptop-code"></i>
                         Bài 5 - Landing Page
                     </a>
                 </li>
 
                 <li>
-                    <a href="BAI6.html">
+                    <a href="TUAN%203/VE%20NHA/BAI6.html">
                         <i class="fas fa-images"></i>
                         Bài 6 - My Portfolio
                     </a>
                 </li>
 
                 <li>
-                    <a href="BAI7.html">
+                    <a href="TUAN%203/VE%20NHA/BAI7.html">
                         <i class="fas fa-columns"></i>
                         Bài 7 - Bố cục Layout
                     </a>
                 </li>
 
                 <li>
-                    <a href="css1.html">
+                    <a href="TUAN%203/VE%20NHA/css1.html">
                         <i class="fas fa-users"></i>
                         Bài CSS1 - Heroes of JavaScript and HTML
                     </a>
                 </li>
 
                 <li>
-                    <a href="BAI8_ICON.html">
+                    <a href="TUAN%203/VE%20NHA/BAI8.html">
                         <i class="fas fa-icons"></i>
                         Bài Font Awesome - Sử dụng Icon
                     </a>
