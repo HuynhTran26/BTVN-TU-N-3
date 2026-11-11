@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang điều hướng bài tập - Huỳnh Yến Trân</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 32px 16px;
+      font-family: Arial, sans-serif;
+      background: #f4f7f5;
+      color: #26332b;
+    }
+    .container {
+      width: min(900px, 100%);
+      margin: auto;
+      background: #fff;
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 8px 28px rgba(0,0,0,.08);
+    }
+    header {
+      text-align: center;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #e5ebe6;
+    }
+    .avatar {
+      width: 112px;
+      height: 112px;
+      margin: 0 auto 14px;
+      border-radius: 50%;
+      border: 3px solid #4b8060;
+      background: #e8f1eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #4b8060;
+      font-size: 13px;
+      overflow: hidden;
+    }
+    .avatar img { width: 100%; height: 100%; object-fit: cover; }
+    h1 { margin: 8px 0; font-size: 27px; }
+    .info { line-height: 1.8; color: #526158; }
+    .info a { color: #28734a; text-decoration: none; }
+    h2 { margin: 28px 0 14px; font-size: 20px; }
+    .assignment-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .assignment {
+      display: block;
+      padding: 16px;
+      border: 1px solid #dce8df;
+      border-radius: 10px;
+      color: #28583b;
+      background: #f8fbf8;
+      text-decoration: none;
+      transition: .2s;
+    }
+    .assignment:hover {
+      background: #eaf4ed;
+      border-color: #4b8060;
+      transform: translateY(-2px);
+    }
+    .assignment strong { display: block; margin-bottom: 5px; }
+    .assignment span { font-size: 13px; color: #68786d; }
+    footer { margin-top: 26px; text-align: center; color: #89958d; font-size: 13px; }
+    @media (max-width: 600px) {
+      .container { padding: 22px 16px; }
+      .assignment-list { grid-template-columns: 1fr; }
+      h1 { font-size: 23px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">
+        <!-- Đặt ảnh đại diện vào thư mục images và đặt tên avatar.jpg -->
+        <img src="images/avatar.jpg" alt="Ảnh đại diện"
+             onerror="this.style.display='none'; this.parentElement.textContent='Ảnh đại diện';">
+      </div>
+      <h1>Huỳnh Yến Trân</h1>
+      <div class="info">
+        <div><strong>MSSV:</strong> 31241023609</div>
+        <div><strong>Facebook:</strong>
+          <a href="https://www.facebook.com/yentran3032006" target="_blank" rel="noopener noreferrer">
+            facebook.com/yentran3032006
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h2>Danh sách bài tập</h2>
+      <div class="assignment-list">
+        <!-- Nếu tên file của bạn khác bên dưới, sửa phần href cho đúng tên file thực tế. -->
+        <a class="assignment" href="BAI2.html">
+          <strong>Bài tập 2</strong><span>Mở bài tập HTML</span>
+        </a>
+        <a class="assignment" href="BAI4.html">
+          <strong>Bài tập 4</strong><span>Mở bài tập danh sách</span>
+        </a>
+        <a class="assignment" href="BAI5.html">
+          <strong>Bài tập 5</strong><span>Mở bài tập bố cục trang</span>
+        </a>
+        <a class="assignment" href="BAI6.html">
+          <strong>Bài tập 6</strong><span>Mở bài tập portfolio</span>
+        </a>
+        <a class="assignment" href="BAI7.html">
+          <strong>Bài tập 7</strong><span>Mở bài tập wrapper</span>
+        </a>
+        <a class="assignment" href="css1.html">
+          <strong>Bài tập CSS 1</strong><span>Mở bài thực hành CSS</span>
+        </a>
+        <a class="assignment" href="BAI8_ICON.html">
+          <strong>Bài tập Font Awesome</strong><span>Mở bài tập sử dụng icon</span>
+        </a>
+      </div>
+    </main>
+    <footer>Trang điều hướng bài tập học phần Thiết kế Web</footer>
+  </div>
+</body>
+</html>
